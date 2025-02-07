@@ -16,7 +16,7 @@ export default function Weather() {
     try {
       const res = await axios
         .get(
-          `http://api.openweathermap.org/geo/1.0/direct?q=${isInput}&limit=1&appid=${key}`
+          `https://api.openweathermap.org/geo/1.0/direct?q=${isInput}&limit=1&appid=${key}`
         )
         .then((response) => {
           console.log(response);
